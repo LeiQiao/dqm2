@@ -1,0 +1,85 @@
+
+
+.monster {
+    position: absolute;
+    display: inline-grid;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border: 1px solid #9e9d9d;
+    z-index: 10;
+}
+
+.red-have {
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+}
+
+.monster .title {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.monster .image {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.line {
+    background-color: #9e9d9d;
+    position: absolute;
+    display: block;
+    /* transform: rotate(321deg); */
+}
+
+.join {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    left: 700px;
+    top: 400px;
+    display: table;
+}
+
+.kind-panel {
+    position: absolute;
+    border: 1px solid #9e9d9d;
+    z-index:99;
+    background-color: white;
+}
+
+.kind-panel .monster {
+    z-index: 12;
+}
+
+.group {
+    position: absolute;
+    border: 1px solid #9e9d9d;
+    z-index: 1;
+}
+
+.dark {
+    background-color: #202125;
+    color: #AFB3B9;
+}
+
+.dark .monster {
+    color: #AFB3B9;
+}
+
+.dark .join {
+    color: #AFB3B9;
+}
+
+.dark .kind-panel {
+    background-color: #202125;
+    color: #AFB3B9;
+}

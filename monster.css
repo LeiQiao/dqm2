@@ -1,0 +1,242 @@
+#target-combo {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+
+#add-kinds {
+    display: flex;
+}
+
+#add-kinds .kind {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #9e9d9d;
+}
+
+#have-monsters {
+    display: flex;
+}
+
+#have-monsters #monster {
+    z-index: 15;
+    position: relative;
+    height: auto;
+    margin: 10px;
+}
+
+.remove-have {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.have-sex {
+    width: 100%;
+    display: flex;
+}
+
+.have-sex .selected {
+    background-color: #9e9d9d;
+    color: #202125;
+}
+
+.have-sex .male {
+    width: 50%;
+    border: 1px solid #9e9d9d;
+    display: block;
+}
+
+.have-sex .female {
+    width: 50%;
+    border: 1px solid #9e9d9d;
+    display: block;
+}
+
+.have-pair {
+    position: absolute;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #9e9d9d;
+    display: inline-grid;
+    justify-items: center;
+    align-items: end;
+}
+
+#have-pairs .selected {
+    z-index: 12;
+    border-color: red;
+    color: red;
+}
+
+.have-pair .monster {
+    position: relative;
+    width: unset;
+    height: unset;
+    border: 0px;
+}
+
+.suggest-panel {
+    position: absolute;
+    z-index: 99;
+    border: 1px solid #9e9d9d;
+}
+
+.suggest-panel .no-parents {
+    margin: 20px;
+}
+
+.suggest-pair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggest-pair .monster {
+    position: inherit;
+}
+
+.suggest-pair .plus {
+    margin: 20px;
+}
+
+.suggest-pair .equal {
+    margin: 20px;
+}
+
+#target-monster {
+    position: absolute;
+}
+
+.monster {
+    position: absolute;
+    display: inline-grid;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border: 1px solid #9e9d9d;
+    z-index: 10;
+}
+
+.have {
+    border: 1px solid red;
+}
+
+.focus-monster {
+    border: 2px solid red;
+}
+
+.monster .title {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.monster .image {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.monster .have {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.red-have {
+    color: red;
+    font-weight: bold;
+}
+
+.line {
+    background-color: #9e9d9d;
+    position: absolute;
+    display: block;
+    /* transform: rotate(321deg); */
+}
+
+.join {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    left: 700px;
+    top: 400px;
+    display: table;
+}
+
+.group {
+    position: absolute;
+    border: 1px solid #9e9d9d;
+    z-index: 1;
+}
+
+.kind-panel {
+    position: absolute;
+    border: 1px solid #9e9d9d;
+    z-index:99;
+    background-color: white;
+}
+
+.kind-panel .monster {
+    z-index: 12;
+}
+
+#search-bar {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 20px;
+    z-index: 99;
+    background-color: white;
+    border: 1px solid #9e9d9d;
+}
+
+#search-bar input {
+    width: 150px;
+    height: 20px;
+}
+
+#search-bar button {
+    height: 26px;
+}
+
+.dark {
+    background-color: #202125;
+    color: #AFB3B9;
+}
+
+.dark #add-kinds {
+    color: #AFB3B9;
+}
+
+.dark #have-panel .monster {
+    background-color: #202125;
+}
+
+.dark .monster {
+    color: #AFB3B9;
+}
+
+.dark .join {
+    color: #AFB3B9;
+}
+
+.dark .kind-panel {
+    background-color: #202125;
+    color: #AFB3B9;
+}
+
+.dark .suggest-panel {
+    background-color: #202125;
+    color: #AFB3B9;
+}
+
+.dark #search-bar {
+    background-color: #202125;
+}

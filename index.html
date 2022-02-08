@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DQM2</title>
+
+    <script language="javascript">
+        //防止页面后退
+        history.pushState(null, null, document.URL);
+        window.addEventListener('popstate', function () {
+            history.pushState(null, null, document.URL);
+        });
+    </script>
+    <script src="resources/monster-define.js" type="text/javascript"></script>
+    <script src="resources/monster.js" type="text/javascript"></script>
+    <script src="kind_panel.js" type="text/javascript"></script>
+    <script src="target_monster.js" type="text/javascript"></script>
+    <script src="monster_tree.js" type="text/javascript"></script>
+    <script src="combo_suggest.js" type="text/javascript"></script>
+    <script src="monster.js" type="text/javascript"></script>
+    <link href="monster.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="ShowMonsters()" class="dark">
+    <div id="target-panel">
+        target: 
+        <select id="target-combo">
+            <option selected>欧鲁德米亚（变身后）</option>
+            <option>暗黑多雷安</option>
+            <option>阿修罗佐玛</option>
+            <option>西多进化型</option>
+            <option>真龙王</option>
+            <option>波塞东</option>
+        </select>
+    </div>
+    <div id="add-panel">
+        add:
+        <div id="add-kinds"></div>
+    </div>
+    <div id="have-panel">
+        have:
+        <div id="have-monsters"></div>
+        <div id="have-pairs"></div>
+    </div>
+    <div id="monsters"></div>
+    <div id="monster-kinds"></div>
+    <div id="monster-suggest"></div>
+    <div id="target-monster">
+        monster tree:
+    </div>
+    <div id="search-bar" style="visibility: hidden;">
+        <input id="father" />
+        <input id="mother" />
+        <button onclick="OnCombo()">search</button>
+    </div>
+</body>
+
+</html>
